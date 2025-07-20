@@ -939,11 +939,10 @@ main {
   margin-bottom: 10px;
 }
 
-.project-item { display: none; }
-
-.project-item.active {
-  display: block;
-  animation: scaleUp 0.25s ease forwards;
+.project-item {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 @keyframes scaleUp {
