@@ -211,8 +211,10 @@ article {
 article { display: none; }
 
 article.active {
-  display: block;
-  animation: fade 0.5s ease backwards;
+  display: block !important;       /* Always show */
+  position: static !important;     /* Remove absolute/fixed layout */
+  height: auto !important;         /* Allow content to define height */
+  margin-bottom: 2rem;   
 }
 
 @keyframes fade {
